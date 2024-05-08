@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    body{
+        background-color: rgb(184, 178, 178);
+    } 
+        .head{
+            color: red;
+            padding: 1% 0 20% 0;
+            text-align: center;
+            text-shadow: 0px 1px yellow,1px 0px yellow,-1px 0px yellow,0px -1px yellow;        
+            animation-name: hi;
+            animation-duration: 5s;
+            border-radius: 10px 10px 150px 150px;
+        }
+        section{
+            display: flex;
+            justify-content:space-evenly;
+            text-align: center;
+            margin-top: -15%;
+        }
+        .con{
+            padding: 2%;
+            border-radius: 10%;
+            display: block;
+            background-color: white;
+            box-shadow: 4px 2px black;
+        }
+        .h{
+          padding: 15px;
+          margin-top: -18%;
+          border-radius: 20%;
+
+        }
+        button{
+            padding: 5% 15%;
+            border-radius: 20%;
+        }
+        button:hover{
+            background-color: white;
+        }
+        .b{
+            background-color: rgb(175, 248, 126);
+        }
+        .m{
+            background-color: yellow;
+        }
+        .p{
+            background-color: rgb(247, 158, 158);
+        }
+        .con:hover{
+            transform: scale(1.3);
+            background-color:rgb(88, 231, 231);
+            border: 1px solid rgb(207, 67, 67);;
+        }
+        .h,button{
+            color: rgb(255, 0, 0);
+        }
+        ul{
+            list-style-type: none;
+        }
+    @media (min-width: 600px) and (max-width: 769px) {
+        .con {
+            padding: 0.5%;
+        }
+    }
+
+    @media (max-width: 601px) {
+        section {
+            display: block;
+            margin-left: 22%;
+        }
+
+        .con {
+            width: 70%;
+            margin-bottom: 5%;
+            border: 1PX solid black;
+            margin-bottom: 20%;
+        }
+        .con:hover{
+            transform: scale(1.2);
+        }
+    }
+    </style>
+    <header class="head">
+        <h1>PLANS & PRICING</h1>
+    </header>
+    <section>
+        <div class="con">
+            <div class="b h">
+                <h2>Basic</h2>
+            </div>
+           
+            <div>
+                <h3>Free</h3>
+                <ul>
+                    <li><pre>24/7 support       &#10006;</pre></li>
+                    <li><pre>Services           &#10006;</pre></li>
+                    <li><pre>Customer Care      &#10004;</pre></li>
+                    <li><pre>Cookies            &#10004;</pre></li>
+                </ul>
+            </div>
+            <footer>
+                <button class="b">Apply</button>
+            </footer>
+        </div>
+        <div class="con">
+            <div class="m h">
+                <h2>Monthly</h2>
+            </div>
+        
+            <div>
+                <h3>&dollar; 0.5</h3>
+                <ul>
+                    <li><pre>24/7 support       &#10006;</pre></li>
+                    <li><pre>Services           &#10004;</pre></li>
+                    <li><pre>Customer Care      &#10004;</pre></li>
+                    <li><pre>Cookies            &#10004;</pre></li>
+                </ul>
+            </div>
+            <footer>
+                <button class="m">Apply</button>
+            </footer>
+        </div> 
+        <div class="con">
+            <div class="p h">
+                <h2>Premium</h2>
+            </div>
+            <div>
+                <h3>&dollar; 10/year</h3>
+
+                <ul>
+                    <li><pre>24/7 support       &#10004;</pre></li>
+                    <li><pre>Services           &#10004;</pre></li>
+                    <li><pre>Customer Care      &#10004;</pre></li>
+                    <li><pre>Cookies            &#10004;</pre></li>
+                </ul>
+            </div>
+            <footer>
+                <button class="p">Apply</button>
+            </footer>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(109, 236, 236);
+  }
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 20px solid transparent;
+    border-image: url("https://i0.wp.com/css-tricks.com/wp-content/uploads/2017/09/repeating-linear-gradient.png?fit=1800%2C900&ssl=1") 50 round;
+  }
+
+  h1 {
+    text-align: center;
+    color: red;
+    text-shadow: 0px 1px 10px rgb(0, 0, 0),1px 0px black, -1px 0px black, 0px -1px black;
+  }
+
+  input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px 20px;
+  }
+
+  .mi{
+     margin-left: 5%;
+  }
+  .mb{
+    margin-left: 40%;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  .completed-button:hover,
+  .complete-button:hover {
+    background-color: rgb(220, 111, 230);
+  }
+
+  .complete-button,
+  .completed-button {
+    margin-left: auto; /* Use auto instead of float: right */
+  }
+
+  .completed-button {
+    background-color: red;
+  }
+
+  .complete-button {
+    background-color: rgb(52, 224, 36);
+  }
+
+  .delete-button {
+    color: black;
+    background-color: white;
+  }
+  ul li{
+    display: flex;
+    justify-content: space-between; /* Align items at the beginning and end */
+  }
+ 
+  @media(max-width:470px)
+  {
+    container{
+    border:5px solid transparent;
+    }
+    button
+    {
+        padding: 5px 10px;
+    }
+    .mi{
+        margin-left: 10%;
+    }
+    .mb{
+        margin-left: 40%;
+    }
+  }
